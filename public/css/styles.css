@@ -1,0 +1,36 @@
+#dates {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.date-input {
+    margin-right: 10px;
+}
+
+#page {
+    display: none;
+}
+
+#loading-spinner {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    opacity: 0.8;
+    z-index: 9999;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#memberships-filter {
+    display: flex;
+    gap: 10px;
+}

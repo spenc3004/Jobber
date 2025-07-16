@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/skeleton.css">
+    <link rel="stylesheet" href="./css/tabulator_simple.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Jobber</title>
+</head>
+
+<body>
+    <h3>Welcome to the Jobber App</h3>
+    <p>This returns all of the completed jobs between the starts and end date.</p>
+    <div id="login-area">
+        <input type="text" id="auth_code" placeholder="Auth Code">
+        <button id="login-btn">Login</button>
+    </div>
+
+    <div id="loading-spinner" style="display:none;">
+        <p>Loading...</p>
+    </div>
+
+
+    <div id="app-area">
+        <div id="dates">
+            <div class="date-input">
+                <label for="start-date">Start Date:</label>
+                <input type="date" id="start-date" value="2025-07-01">
+            </div>
+            <div class="date-input">
+                <label for="end-date">End Date:</label>
+                <input type="date" id="end-date" value="2025-07-31">
+            </div>
+        </div>
+
+
+        <button id="fetch-btn">Get</button><button id="download-csv">Download CSV</button>
+
+        <div id="table">
+
+        </div>
+
+    </div>
+
+
+    <script src="./js/tabulator.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
